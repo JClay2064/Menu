@@ -13,7 +13,7 @@ const App = () => {
   <main>
     <setion className='menu' >
       <Title text={'our menu'}/>
-      <Menu menuItems={menuItems}/>
+      <Menu items={menuItems}/>
     </setion>
   </main>
   ) 

@@ -1,7 +1,11 @@
+import { MenuItem } from "./MenuItem"
 
-
-export const Menu = ({ items }) => {
+export const Menu = ({items}) => {
   return (
-    <div>Menu</div>
+    <div className="section-center">
+      {items.map((menuItem) => {
+      return <MenuItem key = {menuItem.id} {...menuItem}/>; 
+      })}
+    </div>
   )
 }
